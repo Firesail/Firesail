@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    vector<string> inputWords;
+
+    string input = "HEY wtsap dude be cool", word;
+    
+    // cin >> input;
+    
+    stringstream s(input);
+    
+    while (getline(s, word, ' ')) {
+    inputWords.push_back(word);
+    }
+    
+    for(int i=0;i<inputWords.size();i++){
+        cout<<inputWords[i]<<"\n";
+    }
+
+    return 0;
+}
